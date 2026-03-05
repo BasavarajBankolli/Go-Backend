@@ -11,4 +11,11 @@ func main() {
 	}
 
 	fmt.Print('\n')
+
+	j := 0
+	for j < 5 {
+		fmt.Println(j)
+		j++
+	}
+
 }
