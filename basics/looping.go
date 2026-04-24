@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func loop() {
 
 	for i := 1; i < 9; i++ {
 
@@ -10,7 +10,7 @@ func main() {
 
 	}
 
-	fmt.Print('\n')
+	fmt.Print()
 
 	j := 0
 	for j < 5 {

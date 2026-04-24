@@ -1,12 +1,13 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+)
 
-func main() {
+func lst() {
+	nums := []int{1, 2, 3, 4}
 
-	lst := []int{1, 2, 2, 3}
-
-    for _, num := range lst {
-        fmt.Println(num)
-    }
+	for _, num := range nums {
+		fmt.Print(num, " ")
+	}
 }
