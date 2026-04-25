@@ -10,4 +10,5 @@ func lst() {
 	for _, num := range nums {
 		fmt.Print(num, " ")
 	}
+	fmt.Println()
 }
