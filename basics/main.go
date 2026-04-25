@@ -11,4 +11,5 @@ func main() {
     lst()
     loop()
 	ifelse()
+	swit()
 }
