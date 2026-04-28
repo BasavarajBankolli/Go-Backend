@@ -46,6 +46,7 @@ func slice() {
 	fmt.Println("// 6.")
 
 	twoD := make([][]int, 3)
+	fmt.Println(twoD)
     for i := range 3 {
         innerLen := i + 1
         twoD[i] = make([]int, innerLen)
@@ -54,6 +55,7 @@ func slice() {
         }
     }
     fmt.Println("2d: ", twoD)
+	
 	rows, cols := 3, 4
 	
 	data := make([]int, rows*cols)
@@ -61,4 +63,6 @@ func slice() {
 	for i := 0; i < rows; i++ {
 		twoD[i] = data[i*cols : (i+1)*cols]
 	}
+	fmt.Println(twoD)
+	fmt.Print(data)
 }
