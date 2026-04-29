@@ -32,8 +32,23 @@ func mps() {
     n := map[string]int{"foo": 1, "bar": 2}
     fmt.Println("map:", n)
 
+	// 2. check they r equal or not
+	fmt.Println("// 2.")
     n2 := map[string]int{"foo": 1, "bar": 2}
     if maps.Equal(n, n2) {
         fmt.Println("n == n2")
     }
+
+	// 3. make copy of the map
+	n3 := make(map[string]int)
+	maps.Copy(n3, n2) // copy(dst, src)
+
+	fmt.Println(n3)
+
+	mp := map[string]int{"foo": 1, "bar": 2}
+
+	for k, v := range mp {
+		fmt.Println(k, v)
+	}
+
 }
