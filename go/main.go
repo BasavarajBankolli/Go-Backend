@@ -15,6 +15,14 @@ func minMax(nums []int) (mn, mx int) {
 	return
 }
 
+func counter() func() int {
+	cnt := 0
+	return func() int{
+		cnt++
+		return cnt
+	}
+}
+
 
 func main(){
 	/* var pro string = "Basavaraj"
@@ -126,6 +134,21 @@ func main(){
 
 	sum := res(1,2,3,4,5)
 	fmt.Println(sum)
+
+	// closure func 
+	
+	fmt.Println(counter()())
+	fmt.Println(counter()()) 
+
+	addone := func(x int) int{
+		return x+1
+	}
+	res1 := pt(addone,100)
+	fmt.Println(res1)
 	
 }
+func pt(f func(int) int, x int) int{
+	return f(x)
+}
+
 
